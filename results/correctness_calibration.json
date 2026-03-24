@@ -1,0 +1,186 @@
+{
+  "factuality": {
+    "correct_mean": 4.78,
+    "correct_std": 0.68,
+    "incorrect_mean": 1.88,
+    "incorrect_std": 0.71,
+    "separation": 2.9,
+    "n_correct": 454,
+    "n_incorrect": 146,
+    "mann_whitney_p": 0.0,
+    "effect_size": -0.955,
+    "is_significant": true,
+    "threshold_analysis": [
+      {
+        "threshold": "score <= 1",
+        "flagged_correct": 2,
+        "flagged_incorrect": 41,
+        "precision": 0.953,
+        "recall": 0.281,
+        "f1": 0.434
+      },
+      {
+        "threshold": "score <= 2",
+        "flagged_correct": 15,
+        "flagged_incorrect": 126,
+        "precision": 0.894,
+        "recall": 0.863,
+        "f1": 0.878
+      },
+      {
+        "threshold": "score <= 3",
+        "flagged_correct": 30,
+        "flagged_incorrect": 143,
+        "precision": 0.827,
+        "recall": 0.979,
+        "f1": 0.897
+      },
+      {
+        "threshold": "score <= 4",
+        "flagged_correct": 51,
+        "flagged_incorrect": 145,
+        "precision": 0.74,
+        "recall": 0.993,
+        "f1": 0.848
+      }
+    ]
+  },
+  "safety": {
+    "correct_mean": 4.73,
+    "correct_std": 0.76,
+    "incorrect_mean": 2.14,
+    "incorrect_std": 0.83,
+    "separation": 2.59,
+    "n_correct": 454,
+    "n_incorrect": 146,
+    "mann_whitney_p": 0.0,
+    "effect_size": -0.921,
+    "is_significant": true,
+    "threshold_analysis": [
+      {
+        "threshold": "score <= 1",
+        "flagged_correct": 7,
+        "flagged_incorrect": 28,
+        "precision": 0.8,
+        "recall": 0.192,
+        "f1": 0.309
+      },
+      {
+        "threshold": "score <= 2",
+        "flagged_correct": 17,
+        "flagged_incorrect": 110,
+        "precision": 0.866,
+        "recall": 0.753,
+        "f1": 0.806
+      },
+      {
+        "threshold": "score <= 3",
+        "flagged_correct": 31,
+        "flagged_incorrect": 136,
+        "precision": 0.814,
+        "recall": 0.932,
+        "f1": 0.869
+      },
+      {
+        "threshold": "score <= 4",
+        "flagged_correct": 67,
+        "flagged_incorrect": 144,
+        "precision": 0.682,
+        "recall": 0.986,
+        "f1": 0.807
+      }
+    ]
+  },
+  "hallucination": {
+    "correct_mean": 4.67,
+    "correct_std": 0.84,
+    "incorrect_mean": 2.14,
+    "incorrect_std": 0.65,
+    "separation": 2.52,
+    "n_correct": 454,
+    "n_incorrect": 146,
+    "mann_whitney_p": 0.0,
+    "effect_size": -0.914,
+    "is_significant": true,
+    "threshold_analysis": [
+      {
+        "threshold": "score <= 1",
+        "flagged_correct": 1,
+        "flagged_incorrect": 15,
+        "precision": 0.938,
+        "recall": 0.103,
+        "f1": 0.185
+      },
+      {
+        "threshold": "score <= 2",
+        "flagged_correct": 25,
+        "flagged_incorrect": 116,
+        "precision": 0.823,
+        "recall": 0.795,
+        "f1": 0.808
+      },
+      {
+        "threshold": "score <= 3",
+        "flagged_correct": 57,
+        "flagged_incorrect": 141,
+        "precision": 0.712,
+        "recall": 0.966,
+        "f1": 0.82
+      },
+      {
+        "threshold": "score <= 4",
+        "flagged_correct": 69,
+        "flagged_incorrect": 145,
+        "precision": 0.678,
+        "recall": 0.993,
+        "f1": 0.806
+      }
+    ]
+  },
+  "completeness": {
+    "correct_mean": 4.07,
+    "correct_std": 0.54,
+    "incorrect_mean": 2.01,
+    "incorrect_std": 0.8,
+    "separation": 2.07,
+    "n_correct": 454,
+    "n_incorrect": 146,
+    "mann_whitney_p": 0.0,
+    "effect_size": -0.95,
+    "is_significant": true,
+    "threshold_analysis": [
+      {
+        "threshold": "score <= 1",
+        "flagged_correct": 2,
+        "flagged_incorrect": 43,
+        "precision": 0.956,
+        "recall": 0.295,
+        "f1": 0.45
+      },
+      {
+        "threshold": "score <= 2",
+        "flagged_correct": 6,
+        "flagged_incorrect": 105,
+        "precision": 0.946,
+        "recall": 0.719,
+        "f1": 0.817
+      },
+      {
+        "threshold": "score <= 3",
+        "flagged_correct": 33,
+        "flagged_incorrect": 143,
+        "precision": 0.812,
+        "recall": 0.979,
+        "f1": 0.888
+      },
+      {
+        "threshold": "score <= 4",
+        "flagged_correct": 380,
+        "flagged_incorrect": 146,
+        "precision": 0.278,
+        "recall": 1.0,
+        "f1": 0.435
+      }
+    ]
+  }
+}

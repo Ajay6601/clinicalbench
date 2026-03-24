@@ -1,0 +1,179 @@
+{
+  "gpt-4o-mini": {
+    "factuality": {
+      "mean": 4.07,
+      "std": 1.37,
+      "median": 5.0,
+      "count": 200,
+      "score_distribution": {
+        "1": 8,
+        "2": 40,
+        "3": 12,
+        "4": 10,
+        "5": 130
+      }
+    },
+    "safety": {
+      "mean": 4.04,
+      "std": 1.34,
+      "median": 5.0,
+      "count": 200,
+      "score_distribution": {
+        "1": 8,
+        "2": 37,
+        "3": 18,
+        "4": 13,
+        "5": 124
+      }
+    },
+    "hallucination": {
+      "mean": 4.1,
+      "std": 1.28,
+      "median": 5.0,
+      "count": 200,
+      "score_distribution": {
+        "1": 1,
+        "2": 43,
+        "3": 20,
+        "4": 7,
+        "5": 129
+      }
+    },
+    "completeness": {
+      "mean": 3.58,
+      "std": 1.07,
+      "median": 4.0,
+      "count": 200,
+      "score_distribution": {
+        "1": 10,
+        "2": 30,
+        "3": 23,
+        "4": 107,
+        "5": 30
+      }
+    },
+    "accuracy": {
+      "correct": 145,
+      "total": 200,
+      "pct": 72.5
+    }
+  },
+  "claude-sonnet": {
+    "factuality": {
+      "mean": 4.58,
+      "std": 0.94,
+      "median": 5.0,
+      "count": 200,
+      "score_distribution": {
+        "1": 1,
+        "2": 16,
+        "3": 10,
+        "4": 11,
+        "5": 162
+      }
+    },
+    "safety": {
+      "mean": 4.58,
+      "std": 0.95,
+      "median": 5.0,
+      "count": 200,
+      "score_distribution": {
+        "1": 4,
+        "2": 10,
+        "3": 11,
+        "4": 17,
+        "5": 158
+      }
+    },
+    "hallucination": {
+      "mean": 4.41,
+      "std": 1.11,
+      "median": 5.0,
+      "count": 200,
+      "score_distribution": {
+        "1": 0,
+        "2": 27,
+        "3": 18,
+        "4": 2,
+        "5": 153
+      }
+    },
+    "completeness": {
+      "mean": 4.01,
+      "std": 0.64,
+      "median": 4.0,
+      "count": 200,
+      "score_distribution": {
+        "1": 0,
+        "2": 9,
+        "3": 13,
+        "4": 144,
+        "5": 34
+      }
+    },
+    "accuracy": {
+      "correct": 187,
+      "total": 200,
+      "pct": 93.5
+    }
+  },
+  "gpt-3.5-turbo": {
+    "factuality": {
+      "mean": 3.58,
+      "std": 1.67,
+      "median": 5.0,
+      "count": 200,
+      "score_distribution": {
+        "1": 34,
+        "2": 42,
+        "3": 10,
+        "4": 2,
+        "5": 112
+      }
+    },
+    "safety": {
+      "mean": 3.69,
+      "std": 1.56,
+      "median": 5.0,
+      "count": 200,
+      "score_distribution": {
+        "1": 23,
+        "2": 45,
+        "3": 11,
+        "4": 14,
+        "5": 107
+      }
+    },
+    "hallucination": {
+      "mean": 3.65,
+      "std": 1.51,
+      "median": 5.0,
+      "count": 200,
+      "score_distribution": {
+        "1": 15,
+        "2": 55,
+        "3": 19,
+        "4": 7,
+        "5": 104
+      }
+    },
+    "completeness": {
+      "mean": 3.11,
+      "std": 1.23,
+      "median": 4.0,
+      "count": 200,
+      "score_distribution": {
+        "1": 35,
+        "2": 27,
+        "3": 29,
+        "4": 99,
+        "5": 10
+      }
+    },
+    "accuracy": {
+      "correct": 122,
+      "total": 200,
+      "pct": 61.0
+    }
+  }
+}

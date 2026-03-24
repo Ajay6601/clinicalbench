@@ -1,0 +1,197 @@
+{
+  "pairwise": [
+    {
+      "pair": "GPT-4o-mini vs GPT-4o",
+      "n_common": 380,
+      "overall": {
+        "kappa": 0.788,
+        "spearman": 0.786,
+        "exact_agree": 0.629,
+        "within_1": 0.905,
+        "bias": -0.17,
+        "a_mean": 3.38,
+        "b_mean": 3.55
+      },
+      "dimensions": {
+        "factuality": {
+          "n": 95,
+          "kappa": 0.841,
+          "spearman": 0.839,
+          "exact_agree": 0.674,
+          "bias": -0.17,
+          "a_mean": 3.4,
+          "b_mean": 3.57
+        },
+        "safety": {
+          "n": 95,
+          "kappa": 0.777,
+          "spearman": 0.78,
+          "exact_agree": 0.653,
+          "bias": -0.07,
+          "a_mean": 3.54,
+          "b_mean": 3.61
+        },
+        "hallucination": {
+          "n": 95,
+          "kappa": 0.699,
+          "spearman": 0.747,
+          "exact_agree": 0.695,
+          "bias": -0.46,
+          "a_mean": 3.43,
+          "b_mean": 3.89
+        },
+        "completeness": {
+          "n": 95,
+          "kappa": 0.823,
+          "spearman": 0.852,
+          "exact_agree": 0.495,
+          "bias": 0.03,
+          "a_mean": 3.17,
+          "b_mean": 3.14
+        }
+      }
+    },
+    {
+      "pair": "GPT-4o-mini vs Claude",
+      "n_common": 380,
+      "overall": {
+        "kappa": 0.788,
+        "spearman": 0.786,
+        "exact_agree": 0.629,
+        "within_1": 0.905,
+        "bias": -0.17,
+        "a_mean": 3.38,
+        "b_mean": 3.55
+      },
+      "dimensions": {
+        "factuality": {
+          "n": 95,
+          "kappa": 0.841,
+          "spearman": 0.839,
+          "exact_agree": 0.674,
+          "bias": -0.17,
+          "a_mean": 3.4,
+          "b_mean": 3.57
+        },
+        "safety": {
+          "n": 95,
+          "kappa": 0.777,
+          "spearman": 0.78,
+          "exact_agree": 0.653,
+          "bias": -0.07,
+          "a_mean": 3.54,
+          "b_mean": 3.61
+        },
+        "hallucination": {
+          "n": 95,
+          "kappa": 0.699,
+          "spearman": 0.747,
+          "exact_agree": 0.695,
+          "bias": -0.46,
+          "a_mean": 3.43,
+          "b_mean": 3.89
+        },
+        "completeness": {
+          "n": 95,
+          "kappa": 0.823,
+          "spearman": 0.852,
+          "exact_agree": 0.495,
+          "bias": 0.03,
+          "a_mean": 3.17,
+          "b_mean": 3.14
+        }
+      }
+    },
+    {
+      "pair": "GPT-4o vs Claude",
+      "n_common": 380,
+      "overall": {
+        "kappa": 1.0,
+        "spearman": 1.0,
+        "exact_agree": 1.0,
+        "within_1": 1.0,
+        "bias": 0.0,
+        "a_mean": 3.55,
+        "b_mean": 3.55
+      },
+      "dimensions": {
+        "factuality": {
+          "n": 95,
+          "kappa": 1.0,
+          "spearman": 1.0,
+          "exact_agree": 1.0,
+          "bias": 0.0,
+          "a_mean": 3.57,
+          "b_mean": 3.57
+        },
+        "safety": {
+          "n": 95,
+          "kappa": 1.0,
+          "spearman": 1.0,
+          "exact_agree": 1.0,
+          "bias": 0.0,
+          "a_mean": 3.61,
+          "b_mean": 3.61
+        },
+        "hallucination": {
+          "n": 95,
+          "kappa": 1.0,
+          "spearman": 1.0,
+          "exact_agree": 1.0,
+          "bias": 0.0,
+          "a_mean": 3.89,
+          "b_mean": 3.89
+        },
+        "completeness": {
+          "n": 95,
+          "kappa": 1.0,
+          "spearman": 1.0,
+          "exact_agree": 1.0,
+          "bias": 0.0,
+          "a_mean": 3.14,
+          "b_mean": 3.14
+        }
+      }
+    }
+  ],
+  "self_judge_bias": {
+    "gpt-4o-mini": {
+      "n": 132,
+      "mini_mean": 3.36,
+      "claude_mean": 3.38,
+      "bias": -0.02,
+      "mini_higher_pct": 0.197
+    },
+    "gpt-3.5-turbo": {
+      "n": 132,
+      "mini_mean": 3.18,
+      "claude_mean": 3.45,
+      "bias": -0.27,
+      "mini_higher_pct": 0.129
+    },
+    "claude-sonnet": {
+      "n": 116,
+      "mini_mean": 3.65,
+      "claude_mean": 3.87,
+      "bias": -0.22,
+      "mini_higher_pct": 0.095
+    }
+  },
+  "correctness_alignment": {
+    "GPT-4o-mini": {
+      "correct_mean": 4.56,
+      "incorrect_mean": 2.04,
+      "separation": 2.52
+    },
+    "GPT-4o": {
+      "correct_mean": 4.69,
+      "incorrect_mean": 2.39,
+      "separation": 2.3
+    },
+    "Claude": {
+      "correct_mean": 4.69,
+      "incorrect_mean": 2.39,
+      "separation": 2.3
+    }
+  }
+}
