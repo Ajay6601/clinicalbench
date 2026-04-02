@@ -29,7 +29,7 @@ Tested by checking whether judges give low scores when models get the answer wro
 | Hallucination | 4.67 | 2.14 | 2.52 | score ≤ 2 | 0.808 |
 | Completeness | 4.07 | 2.01 | 2.07 | score ≤ 3 | 0.888 |
 
-The factuality judge is the strongest — F1 of 0.897 means it catches ~98% of wrong answers while only flagging ~17% of correct ones as false positives.
+The factuality judge is the strongest F1 of 0.897 means it catches ~98% of wrong answers while only flagging ~17% of correct ones as false positives.
 
 ### Cross-provider judge agreement
 
@@ -42,7 +42,7 @@ GPT-4o-mini (cheap, used in CI) vs Claude Sonnet (independent reference), same r
 | Safety | 0.777 | Substantial - automate with monitoring |
 | Hallucination | 0.699 | Substantial - consider ensemble |
 
-Overall κ = 0.788 with 90.5% within-1-point agreement. The cheap judge is slightly stricter than Claude across the board (bias = -0.17), which is actually what you want for clinical eval.
+Overall k = 0.788 with 90.5% within-1-point agreement. The cheap judge is slightly stricter than Claude across the board (bias = -0.17), which is actually what you want for clinical eval.
 
 ### Does GPT-4o-mini favor its own family's outputs?
 
@@ -106,10 +106,10 @@ ci_gates:
 profiles:
   emergency_medicine:
     safety:
-      block_threshold: 3  # stricter in ED — block more aggressively
+      block_threshold: 3  # stricter in ED, block more aggressively
 ```
 
-Thresholds are calibrated from the correctness analysis. At `safety ≤ 3`, the system catches 93.2% of actually-wrong responses with 81.4% precision.
+Thresholds are calibrated from the correctness analysis. At safety ≤ 3, the system catches 93.2% of actually-wrong responses with 81.4% precision.
 
 ## Project structure
 
@@ -136,13 +136,13 @@ clinicalbench/
 
 ## What I'd do differently with more time
 
-**Use messier data.** MedQA is multiple-choice — clean and structured. Real clinical AI deals with free-text notes, multi-turn conversations, and ambiguous presentations across dozens of specialties. The judge framework transfers, but the benchmarks need to match the deployment context.
+**Use messier data.** MedQA is multiple-choice clean and structured. Real clinical AI deals with free-text notes, multi-turn conversations, and ambiguous presentations across dozens of specialties. The judge framework transfers, but the benchmarks need to match the deployment context.
 
-**Get physician annotations.** Claude as a reference judge gives strong cross-provider signal (κ = 0.788), but there's no substitute for a clinician telling you "this response would have gotten my patient killed." Even 50 physician-annotated samples would meaningfully strengthen the calibration.
+**Get physician annotations.** Claude as a reference judge gives strong cross-provider signal (k = 0.788), but there's no substitute for a clinician telling you "this response would have gotten my patient killed." Even 50 physician-annotated samples would meaningfully strengthen the calibration.
 
-**Ensemble the hallucination judge.** At κ = 0.699, hallucination is the weakest dimension. Running two different judge models and taking the stricter score would likely push reliability above the 0.8 threshold needed for autonomous gating.
+**Ensemble the hallucination judge.** At k= 0.699, hallucination is the weakest dimension. Running two different judge models and taking the stricter score would likely push reliability above the 0.8 threshold needed for autonomous gating.
 
-**Fine-tune a smaller judge.** GPT-4o-mini costs ~$0.002 per evaluation — cheap enough for CI, but a LoRA-tuned smaller model could bring that down 10x while maintaining κ > 0.7, based on what I've seen with similar distillation at ServiceNow.
+**Fine-tune a smaller judge.** GPT-4o-mini costs ~$0.002 per evaluation — cheap enough for CI, but a LoRA-tuned smaller model could bring that down 10x while maintaining k > 0.7, based on what I've seen with similar distillation at ServiceNow.
 
 ## Cost
 
