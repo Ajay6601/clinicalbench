@@ -37,10 +37,10 @@ GPT-4o-mini (cheap, used in CI) vs Claude Sonnet (independent reference), same r
 
 | Dimension | Cohen's κ | Interpretation |
 |-----------|----------|---------------|
-| Factuality | 0.841 | Excellent — safe to automate |
+| Factuality | 0.841 | Excellent - safe to automate |
 | Completeness | 0.823 | Excellent |
-| Safety | 0.777 | Substantial — automate with monitoring |
-| Hallucination | 0.699 | Substantial — consider ensemble |
+| Safety | 0.777 | Substantial - automate with monitoring |
+| Hallucination | 0.699 | Substantial - consider ensemble |
 
 Overall κ = 0.788 with 90.5% within-1-point agreement. The cheap judge is slightly stricter than Claude across the board (bias = -0.17), which is actually what you want for clinical eval.
 
